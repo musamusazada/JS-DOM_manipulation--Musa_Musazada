@@ -1,0 +1,61 @@
+.large-box,
+.small-box {
+    padding: 20px;
+}
+
+.large-box {
+    width: 300px;
+    height: 300px;
+}
+
+.small-box {
+    width: 100px;
+    height: 100px;
+    align-self: flex-end;
+}
+
+.green-border {
+    border: 3px solid green;
+}
+
+.red-border {
+    border: 3px solid red;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    border: 2px solid rgb(206, 196, 196);
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    border-color: black;
+    background: #000;
+    color: #fff
+}
+
+.box-conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

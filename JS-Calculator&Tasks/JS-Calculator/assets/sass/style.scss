@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-family: 'Rampart One', cursive;
+        color: #ef476f;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+            color: #af1e40;
+        }
+    }
+    .calculator__container {
+        width: 340px;
+        background: #e9edc9;
+        border: 2px solid rgba(0, 0, 0, 0.575);
+        padding: 10px;
+        box-shadow: 0 0 10px 5px #faedcd;
+        cursor: pointer;
+        transition: 0.4s;
+        border-radius: 5px;
+        &:hover {
+            box-shadow: 0 0 10px 10px #beb49b5e;
+        }
+        .display {
+            border: 2px solid gray;
+            padding: 20px;
+            text-align: end;
+            font-size: 2.2rem;
+            letter-spacing: 10px;
+            height: 80px;
+            background: #fefae0;
+            margin-bottom: 20px;
+            font-family: 'Permanent Marker', cursive;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .input {
+            background: #94d2bd;
+            color: #fff;
+            transition: 0.2s;
+            &:hover {
+                background: #638f80;
+            }
+        }
+        #clear {
+            background: #f94144;
+            color: #fff;
+            &:hover {
+                background: #c02e31;
+            }
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            .math {
+                color: white;
+                transition: 0.2s;
+            }
+            .divide {
+                margin-left: auto;
+                background: #2a9d8f;
+                &:hover {
+                    background: #1d6e65;
+                }
+            }
+            #result {
+                flex-grow: 2;
+                background: #4ea8de;
+                color: #fff;
+                &:hover {
+                    background: #367196;
+                }
+            }
+            .plus {
+                background: #e9c46a;
+                &:hover {
+                    background: #a89052;
+                }
+            }
+            .mult {
+                background: #e76f51;
+                &:hover {
+                    background: #a5503a;
+                }
+            }
+            .sub {
+                background: #f4a261;
+                &:hover {
+                    background: #9c673c;
+                }
+            }
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 2rem;
+            cursor: pointer;
+            border: none;
+            flex-basis: 25%;
+        }
+    }
+}
